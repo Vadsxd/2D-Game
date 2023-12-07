@@ -1,0 +1,58 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.index_background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.game-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.register {
+  width: 60%;
+  left: 40%;
+  top: 10%;
+  margin: 0 auto;
+  position: absolute;
+}
+
+.game-field {
+  left: 5%;
+  top: 2%;
+  margin: 0 auto;
+  position: absolute;
+}
+
+.interface {
+  position: absolute;
+  top: 0;
+  width: 150px;
+  left: 1200px;
+  color: greenyellow;
+}
+
+.div_score {
+  display: none;
+  text-align: center;
+  top: 30%;
+  left: 40%;
+  margin: 0 auto;
+  position: absolute;
+}
+
+.btn_score {
+  left: 43%;
+  top: 23%;
+  margin: 0 auto;
+  position: absolute;
+}

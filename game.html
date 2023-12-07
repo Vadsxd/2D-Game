@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Game </title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+    <img src="/asset/game_bg.gif" alt="this slowpoke moves" class="game-background"/>
+</head>
+<body>
+<div id = "bg" class="game-field">
+    <canvas id="canvasId" width="1024" height="512">
+        Ваш браузер не поддерживает canvas!
+    </canvas>
+
+    <div class="interface">
+        <b>Игрок: <span id="name_player">Undefined</span></b> <br>
+        <b>Здоровье: <span id="HP">0</span></b> <br>
+        <b>Урон: <span id="DMG">0</span></b> <br>
+        <b>Скорость: <span id="speed">0</span></b> <br>
+        <b>Уровень: <span id="level">1</span></b> <br>
+        <b>Счет: <span id="score">0</span></b> <br>
+    </div>
+</div>
+
+<script type="module">
+    import {GameManager} from '/javascripts/GameManager.js';
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const canvas = document.getElementById("canvasId");
+        const gameManager = new GameManager(canvas, 1);
+        gameManager.play();
+    });
+</script>
+</body>
+</html>

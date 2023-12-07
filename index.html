@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+    <script type="text/javascript" src="/javascripts/index.js"></script>
+    <img src="/asset/index_bg.gif" alt="this slowpoke moves" class="index_background"/>
+</head>
+<body>
+<form action="/game" method="GET" class="register">
+    <label style="color: greenyellow">
+        Введите имя:<br>
+        <input type="text" id="input-name" placeholder ="Имя пользователя" required><br>
+    </label>
+    <input type="submit" value="Начать игру" onclick="saveName()">
+</form>
+
+<button class="btn_score" id="btn_score" onclick="btnScore()">Рекорды</button>
+<div id = "div_score" class = "div_score">
+    <p style="color: greenyellow">Таблица рекордов:</p>
+    <p id="score"></p>
+</div>
+</body>
+</html>
